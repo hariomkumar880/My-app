@@ -1,0 +1,7 @@
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)  # CSV File Read
+    st.write("### 📊 Data Preview:")
+    st.write(df.head())
+
+    st.write("### 🔍 Data Summary:")
+    st.write(df.describe())  # Statistics Show Karega
