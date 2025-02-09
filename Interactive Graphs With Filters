@@ -1,0 +1,6 @@
+st.write("### 📈 Select Column for Visualization")
+column = st.selectbox("Select Column:", df.columns)
+
+if column:
+    fig = px.histogram(df, x=column, title=f"Distribution of {column}")
+    st.plotly_chart(fig)
